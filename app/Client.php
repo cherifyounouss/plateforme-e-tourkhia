@@ -15,7 +15,7 @@ class Client extends Authenticatable
 
  //Mass assignable attributes
   protected $fillable = [
-      'nom', 'prenom', 'num_tel', 'email', 'password',
+      'nom', 'prenom', 'num_tel', 'email', 'password', 'cni', 'date_naissance',
   ];
 
   //hidden attributes
