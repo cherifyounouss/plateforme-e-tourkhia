@@ -31,8 +31,11 @@ Route::group(['middleware' => 'client_out'], function () {
     //Controller : LoginController, Fonction : login, connecter un client
     Route::post('/client_login','Client\LoginController@login');
     Route::get('/client_password/reset','Client\ForgotPasswordController@showLinkRequestForm');
+    //Controller : ForgotPasswordController, Fonction : sendResetLinkEmail, envoi du mail au client
     Route::post('/client_password/email','Client\ForgotPasswordController@sendResetLinkEmail');
+    //Controller : ResetPasswordController, Fonction : showResetForm, affichage du formulaire de reinitialisation
     Route::get('/client_password/reset/{token}','Client\ResetPasswordController@showResetForm');
+    //Controller : ResetPasswordController, Fonction : reset, reinitialisation du mot de passe
     Route::post('/client_password/reset','Client\ResetPasswordController@reset');
 
 });
