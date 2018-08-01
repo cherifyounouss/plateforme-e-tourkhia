@@ -1,2 +1,2 @@
 # plateforme-e-tourkhia
-Plateforme religieuse (musulmane) regroupant l'ensemble des confréries religieuses du SÉNÉGAL
+Plateforme religieuse (musulmane) pour la gestion des evenements religieux au Senegal
